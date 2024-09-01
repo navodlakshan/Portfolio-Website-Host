@@ -127,7 +127,7 @@
             <span><b>Email: </b></span> &nbsp; navodlakshanperera@gmail.com <br>
             <span><b>Language: </b></span> &nbsp; Sinhala, English &emsp;&emsp;&emsp;&emsp;&nbsp;
             <span><b>Degree: </b></span> &nbsp; BICT. (Hons) Degree <br>
-            <span><b>Contact No: </b></span> &nbsp; 0758189134 &emsp;&emsp;&emsp;
+            <!-- <span><b>Contact No: </b></span> &nbsp; 0758189134 &emsp;&emsp;&emsp; -->
         </p>
         </div>
         <br>
@@ -184,7 +184,7 @@
                 <div class="text-box">
                     <span>HTML and CSS in depth</span>
                     <p>Coursera</p>
-                    <a href="#" class="certificate"><i class='bx bx-medal'></i>Certificate</a>
+                    <a href="img/document.pdf" class="certificate"><i class='bx bx-medal'></i>Certificate</a>
                     <br><br>
                 </div>
                 <div class="text-box">
@@ -209,10 +209,11 @@
 
 
             <div class="content">
-                <div class="text-box">
-                    <span>Kottawa Ananda College</span>
-                    <p>2006 - 2016</p>
+            <div class="text-box">
+                    <span>University of Ruhuna, Sri Lanka</span>
+                    <p>2022 - Current <br> BICT (Hons) (Software Engineering) </p>
                 </div>
+
                 <div class="text-box">
                     <span>Lumbini College, Colombo 05</span>
 
@@ -247,10 +248,12 @@
                         </tr>
                     </table>
                 </div>
+
                 <div class="text-box">
-                    <span>University of Ruhuna, Sri Lanka</span>
-                    <p>2022 - Current <br> BICT (Hons) (Software Engineering) </p>
+                    <span>Kottawa Ananda College</span>
+                    <p>2006 - 2016</p>
                 </div>
+
             </div>
 
             <div class="content">
@@ -418,7 +421,6 @@
                                 Python
                             </div>
                         </div>
-                        &nbsp;
 
                         <div class="skill">
                             <div class="outer-circle">
