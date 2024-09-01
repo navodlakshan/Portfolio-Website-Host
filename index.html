@@ -720,12 +720,14 @@
 document.getElementById('form')
   .addEventListener('submit', function(event) {
     event.preventDefault();
-btn.disabled = true; // Disable the button
+      
+// btn.disabled = true; // Disable the button
 
-setTimeout(() => {
-    btn.disabled = false; // Re-enable the button after 7 seconds
-}, 7000); 
-    
+// setTimeout(() => {
+//     btn.disabled = false; // Re-enable the button after 7 seconds
+// }, 7000); 
+
+    btn.value = 'Sending...';
 
     const serviceID = 'default_service';
     const templateID = 'template_w2uljlt';
@@ -733,7 +735,7 @@ setTimeout(() => {
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         btn.value = 'Send Email';
-        alert('Send!')
+        alert('Send Email Successfully!!')
       }, (err) => {
         btn.value = 'Send Email';
         alert(JSON.stringify(err));
