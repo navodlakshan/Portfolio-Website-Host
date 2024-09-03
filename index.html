@@ -666,7 +666,33 @@
             <h2 class="heading">Contact Me</h2>
             <span>get in touch with me</span>
         </div>
-        <form id="form">
+
+<form id="form">
+  <div class="field">
+    <label for="from_name">from_name</label>
+    <input type="text" name="from_name" id="from_name">
+  </div>
+  <div class="field">
+    <label for="first_name">first_name</label>
+    <input type="text" name="first_name" id="first_name">
+  </div>
+  <div class="field">
+    <label for="last_name">last_name</label>
+    <input type="text" name="last_name" id="last_name">
+  </div>
+  <div class="field">
+    <label for="reply_to">reply_to</label>
+    <input type="text" name="reply_to" id="reply_to">
+  </div>
+  <div class="field">
+    <label for="message">message</label>
+    <input type="text" name="message" id="message">
+  </div>
+
+  <input type="submit" id="button" value="Send Email" >
+</form>
+        
+<!--         <form id="form">
             <div class="input-box">
                 <input type="text" placeholder="First Name" id="first_name" required>
                 <input type="text" placeholder="Last Name" id="last_name" required>
@@ -677,7 +703,7 @@
             <div class="formBtn">
                 <button type="submit" class="btn" id="button">Send Message</button>
             </div>
-        </form>
+        </form> -->
         
     </div>
 </div>
@@ -730,7 +756,7 @@ setTimeout(() => {
 
     btn.value = 'Sending...';
 
-    const serviceID = 'service_334cdmv';
+    const serviceID = 'default_service';
     const templateID = 'template_w2uljlt';
 
     emailjs.sendForm(serviceID, templateID, this)
