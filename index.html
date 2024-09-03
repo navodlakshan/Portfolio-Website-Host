@@ -668,29 +668,26 @@
         </div>
 
 <form id="form">
-  <div class="field">
-    <label for="from_name">from_name</label>
-    <input type="text" name="from_name" id="from_name">
-  </div>
-  <div class="field">
-    <label for="first_name">first_name</label>
-    <input type="text" name="first_name" id="first_name">
-  </div>
-  <div class="field">
-    <label for="last_name">last_name</label>
-    <input type="text" name="last_name" id="last_name">
-  </div>
-  <div class="field">
-    <label for="reply_to">reply_to</label>
-    <input type="text" name="reply_to" id="reply_to">
-  </div>
-  <div class="field">
-    <label for="message">message</label>
-    <input type="text" name="message" id="message">
-  </div>
+    <div class="input-box">
+    <label for="first_name">First Name</label>
+    <input type="text" name="first_name" id="first_name" required>
 
-  <input type="submit" id="button" value="Send Email" >
-</form>
+    <label for="last_name">Last Name</label>
+    <input type="text" name="last_name" id="last_name" required>
+    </div>
+
+    <label for="reply_to">Sender Email</label>
+    <input type="text" name="reply_to" id="reply_to" required>
+
+    <label for="from_name">Subject</label>
+    <input type="text" name="from_name" id="from_name" required>
+    
+    <label for="message">Message</label>
+    <input type="text" name="message" id="message" required>
+
+  <div class="formBtn">
+    <input type="submit" id="button" value="Send Email" >
+  </div>
         
 <!--         <form id="form">
             <div class="input-box">
