@@ -668,8 +668,8 @@
         </div>
         <form id="form">
             <div class="input-box">
-                <input type="text" placeholder="First Name" id="to_name" required>
-                <input type="text" placeholder="Last Name" id="to_name" required>
+                <input type="text" placeholder="First Name" id="first_name" required>
+                <input type="text" placeholder="Last Name" id="last_name" required>
             </div>
             <input type="email" id="reply_to" placeholder="Sender Email" required>
             <input type="text" placeholder="Subject" id="from_name" required>
@@ -708,12 +708,12 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!-- mixitup cdn js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
 <script src="script.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   
   <script type="text/javascript">
     emailjs.init('9T3a_S20XBXTYsk9Z')
-  
   </script>
 <script>
     const btn = document.getElementById('button');
@@ -722,15 +722,15 @@ document.getElementById('form')
   .addEventListener('submit', function(event) {
     event.preventDefault();
       
-// btn.disabled = true; // Disable the button
+btn.disabled = true; // Disable the button
 
-// setTimeout(() => {
-//     btn.disabled = false; // Re-enable the button after 7 seconds
-// }, 7000); 
+setTimeout(() => {
+    btn.disabled = false; // Re-enable the button after 7 seconds
+}, 7000); 
 
     btn.value = 'Sending...';
 
-    const serviceID = 'default_service';
+    const serviceID = 'service_334cdmv';
     const templateID = 'template_w2uljlt';
 
     emailjs.sendForm(serviceID, templateID, this)
